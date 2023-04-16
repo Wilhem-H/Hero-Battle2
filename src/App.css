@@ -1,0 +1,28 @@
+#root {
+  max-width: 1280px;
+  min-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  background-color: #242424;
+}
+
+.insightCard {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-between;
+}
+
+.button:hover {
+  color: #15cc0a;
+  background-color: white;
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card {
+  padding: 2em;
+}
