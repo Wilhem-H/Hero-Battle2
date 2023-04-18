@@ -7,16 +7,16 @@ import styled from "styled-components";
 const Button = styled.button`
     background-color: #15cc0a;
     color: white;
-    margin-top: 50px;
+    margin-top: 5px;
+    width: 150px;
+    align-self:center;
 `;
 
 const Img = styled.img`
     width: 90%;
     max-height: 350px;
     border-radius: 5px;
-    &:hover{
-        transform: translateY(-5px);
-        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     }
 `;
 
@@ -61,7 +61,7 @@ function Card({hero}){
                 <figure className="img"><Img src={hero.img} alt={hero.name}/></figure>
                 <Hr className= "separator"/>
                 <div><h1>{hero.name}</h1><h3>Film: {hero.film}</h3></div>
-                <div><Button onClick={addPoint} className="button">Gagnant</Button></div>
+                <Button onClick={addPoint} className="button">Gagnant</Button>
                 <P>score : {hero.score}</P>
             </div>
         </Div>
